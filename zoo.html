@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="estado-jirafa"></p>
+    <button onclick="zoo.animaless[0].asearse()">Limpiar</button>
+    <button onclick="zoo.animaless[0].comer()">Comer</button>
+    <button onclick="zoo.animaless[0].dormir()">Dormir</button>
+    <button onclick="zoo.animaless[0].jugar()">Jugar</button>
+    <p id="estado-zebra"></p>
+    <button onclick="zebra.asearse()">Limpiar</button>
+    <button onclick="zebra.comer()">Comer</button>
+    <button onclick="zebra.dormir()">Dormir</button>
+    <button onclick="zebra.jugar()">Jugar</button>
+    <p id="estado-salmon"></p>
+    <button onclick="salmon.asearse()">Limpiar</button>
+    <button onclick="salmon.comer()">Comer</button>
+    <button onclick="salmon.dormir()">Dormir</button>
+    <button onclick="salmon.jugar()">Jugar</button>
+    <p id="estado-elefante"></p>
+    <button onclick="elefante.asearse()">Limpiar</button>
+    <button onclick="elefante.comer()">Comer</button>
+    <button onclick="elefante.dormir()">Dormir</button>
+    <button onclick="elefante.jugar()">Jugar</button>
+
+<script src="zoo.js"></script>
+
+    <script>
+
+       
+        let jirafa = new Animales(0, 0, 5, 0, "jirafa");
+        let zebra = new Animales(5, 2, 5, 0, "zebra");
+        let salmon = new Animales(0, 3, 5, 0, "salmon");
+        let elefante = new Animales(0, 0, 50, 6, "elefante");
+
+
+        let zoo = new Zoo();
+        zoo.anadirAnimal(jirafa);
+        console.log(zoo);
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    class Persona {
+        constructor(nombre, edad) {
+            this.nombre = nombre;
+            this.edad = edad;
+            this.varita = null;
+        }
+
+        comprarVarita(varita) {
+            this.varita = varita;
+        }
+    }
+
+    class Varita {
+        constructor(nombre, tipoMadera, interior, fabricante) {
+            this.nombre = nombre;
+            this.tipoMadera = tipoMadera;
+            this.interior = interior;
+            this.fabricante = fabricante;
+        }
+
+        leviosa() {
+            console.log('ale flota un rato');
+        }
+    }
+
+    let olivanders = new Persona('Olivanders', 373);
+    let varita = new Varita('rama', 'sauco', 'cola de dragon o mierdas de esas', olivanders);
+    let harrypopotter = new Persona('Harry Potter', 12);
+    harrypopotter.comprarVarita(varita);
+    harrypopotter.varita.leviosa();
+    </script>
+</body>
+</html>
